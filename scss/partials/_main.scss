@@ -24,7 +24,7 @@
         overflow-x: scroll;
         padding: 0 1rem 0 1rem;
         gap: 2rem;
-        border: rgb(58, 54, 54) solid 1px;
+        border: rgb(58, 54, 54) dotted 1px;
         border-radius: 5px;
 
         &::-webkit-scrollbar {
@@ -59,6 +59,8 @@
 
         &__img {
             max-width: 250px;
+            min-height: 187px;
+            border-radius: 5px;
         }
 
         &__sub {
@@ -75,6 +77,17 @@
 
     .main {
 
+        &__title {
+            margin-top: 1rem;
+            border: rgb(75, 36, 36) 1px;
+            border-style: dashed;
+            padding: 1rem;
+
+            h2 {
+                padding: 0.5rem;
+            }
+        }
+
         &-contenedor {
             height: max-content;
             padding-bottom: 3rem;
@@ -82,6 +95,7 @@
             overflow-x: hidden;
             width: auto;
             gap: 0.5rem;
+            border: none;
 
             &__card {
                 margin-top: 1.5rem;
