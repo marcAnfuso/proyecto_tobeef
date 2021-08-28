@@ -166,4 +166,5 @@ html {
     .main-contenedor__img {
       max-width: 250px; }
     .main-contenedor__sub {
-      padding-top: 1rem; } }
+      padding-top: 1rem;
+      text-transform: uppercase; } }
