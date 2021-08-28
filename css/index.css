@@ -87,7 +87,9 @@ html {
     justify-content: space-evenly; }
   .header__item {
     list-style: disc;
-    color: white; } }
+    color: white; }
+  .header__link {
+    font-size: 1.5rem; } }
 
 .main {
   background-color: black;
