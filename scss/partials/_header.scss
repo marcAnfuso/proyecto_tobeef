@@ -1,0 +1,117 @@
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+.header {
+    padding-top: 1rem;
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .3;    
+        background: url(../img/foto-header2.png);
+        z-index: -1;
+        background-size: cover;
+    }
+
+    &__nav {
+        @include flex(row, space-between);
+    }
+
+    &__logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 2rem;
+        color: white;
+        text-decoration: none;
+
+        span {
+            color: crimson;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        h1 {
+            text-shadow: 2px 2px 1px black;
+            padding: 1rem;
+            span {
+                color: red;
+            }
+        }
+        h3 {
+            color: white;
+            text-shadow: 1px 3px 1px black;
+        }
+    }
+
+    &__lista {
+        padding-right: 3rem;
+        gap: 2rem;
+        @include flex(row, space-around);
+    }
+    &__item {
+        list-style: none;
+    }    
+    &__link {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: crimson;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+// Responsive
+
+@media screen and (max-width:600px) {
+    .header{
+        &__logo {
+            padding-left: 1rem;
+        }
+        &__nav {
+            @include flex(column, space-around);
+            gap: 3rem;
+            padding-left: 1rem;
+        }
+
+        &__title {
+            padding-left: 0;
+        }
+
+        &__lista {
+            padding-left: 1rem;
+            padding-right: 0;
+            gap: 1.5rem;
+            @include flex(column, space-evenly);
+        }   
+        &__item {
+            list-style: disc;
+            color: white;
+        }
+    }
+}
