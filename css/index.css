@@ -106,12 +106,16 @@ html {
     display: flex;
     background-color: black;
     height: 400px;
-    width: 800px;
+    width: 1000px;
     overflow-x: scroll;
     padding: 0 1rem 0 1rem;
     gap: 2rem;
-    border: black solid 1px;
+    border: #3a3636 solid 1px;
     border-radius: 5px; }
+    .main-contenedor::-webkit-scrollbar {
+      background: white; }
+      .main-contenedor::-webkit-scrollbar-thumb:horizontal {
+        background-color: #3a3636; }
     .main-contenedor__card {
       min-width: 300px;
       height: 300px;

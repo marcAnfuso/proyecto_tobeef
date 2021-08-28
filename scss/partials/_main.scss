@@ -20,12 +20,20 @@
         display: flex;
         background-color: black;
         height: 400px;
-        width: 800px;
+        width: 1000px;
         overflow-x: scroll;
         padding: 0 1rem 0 1rem;
         gap: 2rem;
-        border: black solid 1px;
+        border: rgb(58, 54, 54) solid 1px;
         border-radius: 5px;
+
+        &::-webkit-scrollbar {
+            background: white;
+
+            &-thumb:horizontal {
+                background-color: rgb(58, 54, 54);
+            }
+        }
 
 
         &__card {
