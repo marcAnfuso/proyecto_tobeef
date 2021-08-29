@@ -19,21 +19,12 @@
     &-contenedor {
         display: flex;
         background-color: black;
-        height: 400px;
-        width: 1000px;
-        overflow-x: scroll;
         padding: 0 1rem 0 1rem;
         gap: 2rem;
         border: rgb(58, 54, 54) dotted 1px;
         border-radius: 5px;
-
-        &::-webkit-scrollbar {
-            background: white;
-
-            &-thumb:horizontal {
-                background-color: rgb(58, 54, 54);
-            }
-        }
+        justify-content: center;
+        flex-wrap: wrap;
 
 
         &__card {
@@ -66,6 +57,7 @@
         &__sub {
             padding-top: 1rem;
             color: white;
+            text-transform: uppercase;
         }
     }
     

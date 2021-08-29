@@ -107,17 +107,12 @@ html {
   .main-contenedor {
     display: flex;
     background-color: black;
-    height: 400px;
-    width: 1000px;
-    overflow-x: scroll;
     padding: 0 1rem 0 1rem;
     gap: 2rem;
     border: #3a3636 dotted 1px;
-    border-radius: 5px; }
-    .main-contenedor::-webkit-scrollbar {
-      background: white; }
-      .main-contenedor::-webkit-scrollbar-thumb:horizontal {
-        background-color: #3a3636; }
+    border-radius: 5px;
+    justify-content: center;
+    flex-wrap: wrap; }
     .main-contenedor__card {
       min-width: 300px;
       height: 300px;
@@ -139,7 +134,8 @@ html {
       border-radius: 5px; }
     .main-contenedor__sub {
       padding-top: 1rem;
-      color: white; }
+      color: white;
+      text-transform: uppercase; }
 
 @media screen and (max-width: 600px) {
   .main__title {
