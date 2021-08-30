@@ -141,26 +141,55 @@ html {
       color: white;
       text-transform: uppercase; }
 
-.main-paises__title {
-  background: linear-gradient(to left, blue, white, red);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: 'Rampart One', cursive;
-  font-size: 2rem; }
-
-.main-paises__pais {
-  width: 500px;
-  height: 500px;
-  background-color: black;
+.main-paises {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-bottom: 2rem; }
-
-.main-paises__item {
-  color: white;
-  list-style: none;
-  padding: 1rem; }
+  flex-direction: column; }
+  .main-paises h2 {
+    color: white;
+    text-transform: uppercase; }
+  .main-paises__contenedor {
+    display: flex;
+    background-color: black;
+    padding: 2rem;
+    gap: 2rem;
+    border: #3a3636 dotted 1px;
+    border-radius: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1200px; }
+  .main-paises__pais {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 2rem; }
+  .main-paises__divTitle {
+    margin: 1rem 0rem 3rem 0rem; }
+  .main-paises__subtitle {
+    font-family: 'Rampart One', cursive;
+    font-size: 2rem; }
+    .main-paises__subtitle--arg {
+      background: linear-gradient(to right, #61cfdd, #61cfdd, white, #61cfdd, #61cfdd);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .main-paises__subtitle--usa {
+      background: linear-gradient(to right, blue, blue, white, red, white, red);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .main-paises__subtitle--fra {
+      background: linear-gradient(to right, blue, blue, white, red, red);
+      -webkit-background-clip: text;
+      color: transparent; }
+    .main-paises__subtitle--mex {
+      background: linear-gradient(to right, green, green, white, red, red);
+      -webkit-background-clip: text;
+      color: transparent; }
+  .main-paises__item {
+    color: white;
+    list-style: none;
+    padding: 1rem; }
 
 @media screen and (max-width: 600px) {
   .main__title {
@@ -191,5 +220,22 @@ html {
     .main-contenedor__sub {
       padding-top: 1rem;
       text-transform: uppercase; }
-  .main-paises__pais {
-    width: 400px; } }
+  .main-paises {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
+    .main-paises__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 100%; }
+    .main-paises__pais {
+      width: 400px; }
+    .main-paises__divTitle {
+      max-width: 90%; }
+    .main-paises__title {
+      border: #4b2424 1px;
+      border-style: dashed;
+      padding: 1rem; } }
