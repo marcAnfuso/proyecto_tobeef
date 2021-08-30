@@ -72,6 +72,7 @@
     &__link {
         text-decoration: none;
         color: white;
+        font-weight: 700;
 
         &:hover {
             color: crimson;
@@ -116,6 +117,7 @@
 
         &__link {
             font-size: 1.5rem;
+            font-weight: 400;
         }
     }
 }

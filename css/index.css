@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 *,
 *::after,
 *::before {
@@ -63,7 +64,8 @@ html {
     list-style: none; }
   .header__link {
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-weight: 700; }
     .header__link:hover {
       color: crimson; }
 
@@ -89,7 +91,8 @@ html {
     list-style: disc;
     color: white; }
   .header__link {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem;
+    font-weight: 400; } }
 
 .main {
   background-color: black;
@@ -107,17 +110,18 @@ html {
   .main-contenedor {
     display: flex;
     background-color: black;
-    padding: 0 1rem 0 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     gap: 2rem;
     border: #3a3636 dotted 1px;
     border-radius: 5px;
     justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 1rem; }
     .main-contenedor__card {
       min-width: 300px;
       height: 300px;
       background-color: black;
-      margin-top: 3rem;
+      margin: 1rem;
       border-radius: 5px;
       display: flex;
       flex-direction: column;
@@ -136,6 +140,27 @@ html {
       padding-top: 1rem;
       color: white;
       text-transform: uppercase; }
+
+.main-paises__title {
+  background: linear-gradient(to left, blue, white, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Rampart One', cursive;
+  font-size: 2rem; }
+
+.main-paises__pais {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 2rem; }
+
+.main-paises__item {
+  color: white;
+  list-style: none;
+  padding: 1rem; }
 
 @media screen and (max-width: 600px) {
   .main__title {
@@ -165,4 +190,6 @@ html {
       max-width: 250px; }
     .main-contenedor__sub {
       padding-top: 1rem;
-      text-transform: uppercase; } }
+      text-transform: uppercase; }
+  .main-paises__pais {
+    width: 400px; } }
