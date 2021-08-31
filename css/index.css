@@ -188,20 +188,9 @@ h4 {
       padding-top: 1rem;
       text-transform: uppercase; }
   .main-paises {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center; }
-    .main-paises__contenedor {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      width: 100%; }
-    .main-paises__pais {
-      width: 400px; }
+    text-align: center; }
     .main-paises__divTitle {
-      max-width: 90%; }
+      text-align: center; }
     .main-paises__title {
       border: #4b2424 1px;
       border-style: dashed;

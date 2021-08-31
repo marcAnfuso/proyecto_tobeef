@@ -135,26 +135,10 @@
     }
 
     .main-paises {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-
-        &__contenedor {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            width: 100%;
-
-        }
-
-        &__pais {
-            width: 400px;
-        }
+        text-align: center;
 
         &__divTitle {
-            max-width: 90%;
+            text-align: center;
         }
 
         &__title {
