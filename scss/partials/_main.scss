@@ -64,6 +64,10 @@
     
 }
 
+.carousel-item, .carousel-inner {
+    max-width: 800px;
+}
+
 // SECTOR PAÍSES
 
 .main-paises {
@@ -105,32 +109,7 @@
     &__subtitle {
         font-family: 'Rampart One', cursive;
         font-size: 2rem;
-
-        &--arg {
-            background: linear-gradient(to right, rgb(97, 207, 221),rgb(97, 207, 221), white,rgb(97, 207, 221), rgb(97, 207, 221));
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-
-        &--usa {
-            background: linear-gradient(to right,blue, blue,white, red, white, red);
-            -webkit-background-clip: text;
-            color: transparent;
-                
-        }
-
-        &--fra {
-            background: linear-gradient(to right, blue, blue, white, red, red);
-            -webkit-background-clip: text;
-            color: transparent; 
-        }
-
-        &--mex {
-            background: linear-gradient(to right, green,green , white,red, red);
-            -webkit-background-clip: text;
-            color: transparent;
-            
-        }
+        color: white;
     }
 
     &__item {

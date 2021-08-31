@@ -7,8 +7,11 @@
   margin: 0;
   box-sizing: border-box; }
 
-html {
+html, body {
   font-family: 'Montserrat', sans-serif; }
+
+h4 {
+  font-size: inherit; }
 
 .header {
   padding-top: 1rem;
@@ -141,6 +144,9 @@ html {
       color: white;
       text-transform: uppercase; }
 
+.carousel-item, .carousel-inner {
+  max-width: 800px; }
+
 .main-paises {
   display: flex;
   flex-direction: column; }
@@ -169,23 +175,8 @@ html {
     margin: 1rem 0rem 3rem 0rem; }
   .main-paises__subtitle {
     font-family: 'Rampart One', cursive;
-    font-size: 2rem; }
-    .main-paises__subtitle--arg {
-      background: linear-gradient(to right, #61cfdd, #61cfdd, white, #61cfdd, #61cfdd);
-      -webkit-background-clip: text;
-      color: transparent; }
-    .main-paises__subtitle--usa {
-      background: linear-gradient(to right, blue, blue, white, red, white, red);
-      -webkit-background-clip: text;
-      color: transparent; }
-    .main-paises__subtitle--fra {
-      background: linear-gradient(to right, blue, blue, white, red, red);
-      -webkit-background-clip: text;
-      color: transparent; }
-    .main-paises__subtitle--mex {
-      background: linear-gradient(to right, green, green, white, red, red);
-      -webkit-background-clip: text;
-      color: transparent; }
+    font-size: 2rem;
+    color: white; }
   .main-paises__item {
     color: white;
     list-style: none;
