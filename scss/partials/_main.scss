@@ -57,10 +57,14 @@
             border-radius: 5px;
         }
 
-        &__sub {
+        &__link {
             padding-top: 1rem;
             color: white;
             text-transform: uppercase;
+
+            &:hover {
+                color: crimson;
+            }
         }
     }
     
@@ -97,8 +101,70 @@
 
 }
 
+// Churrasquitos 
 
-// RESPONSIVE
+.combos {
+    border-top: grey 3px dotted;
+    padding: 3rem 0 3rem 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+
+    img {
+        width: 500px;
+    }
+
+    &--left {
+        border: rgb(75, 36, 36) 3px solid;
+        border-radius: 5px;
+        padding: 2rem;
+    }
+
+    &__textoUno {
+        color: white;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+
+    &__textoDos {
+        padding-top: 2rem;
+        p {
+            color: crimson;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: 700;
+        }
+
+    }
+    
+    &__buttom { 
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        a {
+            padding: 1rem;
+            background-color: crimson;
+            border-radius: 5px;
+            color: white;
+        }   
+    }
+}
+
+    h3 {
+        color: white;
+        margin-bottom: 2rem;
+    }
+  
+
+
+
+
+
+// RESPONSIVE ----------------------------
 
 @media screen and (max-width:600px) {
 
@@ -137,7 +203,7 @@
                 max-width: 250px;
             }
 
-            &__sub {
+            &__link {
                 padding-top: 1rem;
                 text-transform: uppercase;
             }
@@ -166,4 +232,32 @@
             padding: 1rem; 
         }
     }
+
+    // churrasquitos
+
+    .combos {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            text-decoration:underline;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 80%;
+        }
+
+        &__buttom {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+    }   
+     
 }
+
+

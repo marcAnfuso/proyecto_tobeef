@@ -147,10 +147,12 @@ h4 {
       max-width: 250px;
       min-height: 187px;
       border-radius: 5px; }
-    .main-contenedor__sub {
+    .main-contenedor__link {
       padding-top: 1rem;
       color: white;
       text-transform: uppercase; }
+      .main-contenedor__link:hover {
+        color: crimson; }
 
 .carousel-item, .carousel-inner {
   max-width: 800px; }
@@ -167,6 +169,46 @@ h4 {
     text-transform: uppercase; }
   .main-paises__divTitle {
     margin: 2rem 0rem 1rem 0rem; }
+
+.combos {
+  border-top: grey 3px dotted;
+  padding: 3rem 0 3rem 0; }
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4rem; }
+  .box img {
+    width: 500px; }
+  .box--left {
+    border: #4b2424 3px solid;
+    border-radius: 5px;
+    padding: 2rem; }
+  .box__textoUno {
+    color: white;
+    font-style: normal;
+    text-transform: uppercase; }
+  .box__textoDos {
+    padding-top: 2rem; }
+    .box__textoDos p {
+      color: crimson;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: 700; }
+  .box__buttom {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem; }
+    .box__buttom a {
+      padding: 1rem;
+      background-color: crimson;
+      border-radius: 5px;
+      color: white; }
+
+h3 {
+  color: white;
+  margin-bottom: 2rem; }
 
 @media screen and (max-width: 600px) {
   .main__title {
@@ -194,7 +236,7 @@ h4 {
       justify-content: center; }
     .main-contenedor__img {
       max-width: 250px; }
-    .main-contenedor__sub {
+    .main-contenedor__link {
       padding-top: 1rem;
       text-transform: uppercase; }
   #carouselExampleIndicators {
@@ -209,4 +251,17 @@ h4 {
     .main-paises__title {
       border: #4b2424 1px;
       border-style: dashed;
-      padding: 1rem; } }
+      padding: 1rem; }
+  .combos {
+    display: flex;
+    flex-direction: column; }
+    .combos h3 {
+      text-decoration: underline; }
+  .box {
+    display: flex;
+    flex-direction: column; }
+    .box img {
+      width: 80%; }
+    .box__buttom {
+      margin-top: 3rem;
+      margin-bottom: 1rem; } }
