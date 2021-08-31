@@ -42,6 +42,8 @@ h4 {
     padding-left: 2rem;
     color: white;
     text-decoration: none; }
+    .header__logo--white:hover {
+      color: white; }
     .header__logo span {
       color: crimson; }
   .header__title {
@@ -83,6 +85,10 @@ h4 {
     padding-left: 1rem; }
   .header__title {
     padding-left: 0; }
+    .header__title h1 {
+      visibility: hidden; }
+    .header__title h3 span {
+      color: crimson; }
   .header__lista {
     padding-left: 1rem;
     padding-right: 0;
@@ -149,9 +155,13 @@ h4 {
 .carousel-item, .carousel-inner {
   max-width: 800px; }
 
+#carouselExampleIndicators {
+  padding: 0 5rem; }
+
 .main-paises {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 1rem; }
   .main-paises h2 {
     color: white;
     text-transform: uppercase; }
@@ -187,10 +197,15 @@ h4 {
     .main-contenedor__sub {
       padding-top: 1rem;
       text-transform: uppercase; }
+  #carouselExampleIndicators {
+    padding: 0 2rem; }
   .main-paises {
-    text-align: center; }
+    text-align: center;
+    padding: 0;
+    border: none; }
     .main-paises__divTitle {
-      text-align: center; }
+      text-align: center;
+      margin: 1.5rem; }
     .main-paises__title {
       border: #4b2424 1px;
       border-style: dashed;

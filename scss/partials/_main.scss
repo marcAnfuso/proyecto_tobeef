@@ -66,16 +66,25 @@
     
 }
 
+
+
+// SECTOR PAÍSES
+
 .carousel-item, .carousel-inner {
     max-width: 800px;
 }
 
-// SECTOR PAÍSES
+#carouselExampleIndicators {
+    padding: 0 5rem;
+}
+
 
 .main-paises {
 
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
+    
 
     h2 {
         color: white;
@@ -89,9 +98,11 @@
 }
 
 
+// RESPONSIVE
 
 @media screen and (max-width:600px) {
 
+    //combos
     .main {
 
         &__title {
@@ -134,11 +145,19 @@
         
     }
 
+    // países
+    #carouselExampleIndicators {
+        padding: 0 2rem;
+    }
+
     .main-paises {
         text-align: center;
+        padding: 0;
+        border: none;
 
         &__divTitle {
             text-align: center;
+            margin: 1.5rem;
         }
 
         &__title {

@@ -37,6 +37,10 @@
         color: white;
         text-decoration: none;
 
+        &--white:hover {
+            color: white;
+        }
+
         span {
             color: crimson;
         }
@@ -102,6 +106,16 @@
 
         &__title {
             padding-left: 0;
+
+            h1 {
+                visibility: hidden;
+            }
+
+            h3 {
+                span {
+                    color: crimson;
+                }
+            }
         }
 
         &__lista {
