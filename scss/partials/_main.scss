@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+    z-index: 1;
+    position: relative;
 
     h2 {
         color: white;
@@ -80,42 +82,8 @@
         text-transform: uppercase;
     }
 
-    &__contenedor {
-        display: flex;
-        background-color: black;
-        padding: 2rem;
-        gap: 2rem;
-        border: rgb(58, 54, 54) dotted 1px;
-        border-radius: 5px;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 1200px;
-    }
-
-    &__pais {
-        width: 500px;
-        height: 500px;
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
-        margin-bottom: 2rem;
-    }
-
     &__divTitle {
-        margin: 1rem 0rem 3rem 0rem;
-    }
-
-    &__subtitle {
-        font-family: 'Rampart One', cursive;
-        font-size: 2rem;
-        color: white;
-    }
-
-    &__item {
-        color: white;   
-        list-style:none;
-        padding: 1rem;
+        margin: 2rem 0rem 1rem 0rem;
     }
 
 }

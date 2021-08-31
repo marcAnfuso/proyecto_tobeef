@@ -104,7 +104,9 @@ h4 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  align-content: center; }
+  align-content: center;
+  z-index: 1;
+  position: relative; }
   .main h2 {
     color: white; }
   .main__title {
@@ -153,34 +155,8 @@ h4 {
   .main-paises h2 {
     color: white;
     text-transform: uppercase; }
-  .main-paises__contenedor {
-    display: flex;
-    background-color: black;
-    padding: 2rem;
-    gap: 2rem;
-    border: #3a3636 dotted 1px;
-    border-radius: 5px;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 1200px; }
-  .main-paises__pais {
-    width: 500px;
-    height: 500px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 2rem; }
   .main-paises__divTitle {
-    margin: 1rem 0rem 3rem 0rem; }
-  .main-paises__subtitle {
-    font-family: 'Rampart One', cursive;
-    font-size: 2rem;
-    color: white; }
-  .main-paises__item {
-    color: white;
-    list-style: none;
-    padding: 1rem; }
+    margin: 2rem 0rem 1rem 0rem; }
 
 @media screen and (max-width: 600px) {
   .main__title {
