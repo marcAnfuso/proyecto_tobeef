@@ -163,7 +163,8 @@ h4 {
 .main-paises {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  flex-wrap: wrap; }
   .main-paises h2 {
     color: white;
     text-transform: uppercase; }
@@ -173,6 +174,8 @@ h4 {
 .combos {
   border-top: grey 3px dotted;
   padding: 3rem 0 3rem 0; }
+  .combos div {
+    flex-wrap: wrap; }
 
 .box {
   display: flex;
@@ -185,7 +188,9 @@ h4 {
   .box--left {
     border: #4b2424 3px solid;
     border-radius: 5px;
-    padding: 2rem; }
+    padding: 2rem;
+    min-width: 424px;
+    min-height: 350px; }
   .box__textoUno {
     color: white;
     font-style: normal;
@@ -205,10 +210,25 @@ h4 {
       background-color: crimson;
       border-radius: 5px;
       color: white; }
+      .box__buttom a:hover {
+        color: black;
+        font-weight: 900; }
 
 h3 {
   color: white;
   margin-bottom: 2rem; }
+
+.combos-fritas {
+  border-top: grey 3px dotted;
+  padding-bottom: 2rem; }
+  .combos-fritas__title {
+    padding-top: 2rem; }
+
+#carouselExampleCaptions {
+  padding: 0rem 7rem; }
+
+.carousel-caption p {
+  text-shadow: black 1px 1px 1px; }
 
 @media screen and (max-width: 600px) {
   .main__title {
@@ -265,4 +285,16 @@ h3 {
       width: 80%; }
     .box__buttom {
       margin-top: 3rem;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+    .box--left {
+      min-width: 424px;
+      min-height: 350px; }
+  #carouselExampleCaptions {
+    padding: 0.5rem 1.5rem; }
+  .carousel-caption p {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 900;
+    text-shadow: black 1px 1px 1px; }
+  .combos-fritas__title h3 {
+    font-size: 1.2rem; } }

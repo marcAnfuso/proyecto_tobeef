@@ -88,6 +88,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
     
 
     h2 {
@@ -101,11 +102,15 @@
 
 }
 
-// Churrasquitos 
+// Churrasquitos y burger
 
 .combos {
     border-top: grey 3px dotted;
     padding: 3rem 0 3rem 0;
+
+    & div {
+        flex-wrap: wrap;
+    }
 }
 
 .box {
@@ -123,6 +128,8 @@
         border: rgb(75, 36, 36) 3px solid;
         border-radius: 5px;
         padding: 2rem;
+        min-width: 424px;
+        min-height: 350px;
     }
 
     &__textoUno {
@@ -145,11 +152,17 @@
     &__buttom { 
         margin-top: 2rem;
         margin-bottom: 0.5rem;
+
         a {
             padding: 1rem;
             background-color: crimson;
             border-radius: 5px;
             color: white;
+
+            &:hover {
+                color: black;
+                font-weight: 900;
+            }
         }   
     }
 }
@@ -160,11 +173,34 @@
     }
   
 
+    // Sector Papas fritas
+
+    .combos-fritas {
+        border-top: grey 3px dotted; 
+        padding-bottom: 2rem;
+
+        &__title {
+            padding-top: 2rem;
+        }
+    }
+
+    #carouselExampleCaptions {
+        padding: 0rem 7rem;
+    }
+
+    .carousel-caption p {
+        text-shadow: black 1px 1px 1px;
+    }
 
 
 
 
-// RESPONSIVE ----------------------------
+
+
+
+
+
+// RESPONSIVE --------------------------------------------------------------
 
 @media screen and (max-width:600px) {
 
@@ -233,7 +269,7 @@
         }
     }
 
-    // Combos
+    // Combos detallados
 
     .combos {
         display: flex;
@@ -257,8 +293,30 @@
             margin-top: 3rem;
             margin-bottom: 1rem;
         }
+
+        &--left {
+            min-width: 424px;
+            min-height: 350px;
+        }
     }   
      
+
+    // Variedad de fritas 
+
+    #carouselExampleCaptions {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+        color: white;
+        font-weight: 900;
+        text-shadow: black 1px 1px 1px;
+    }
+
+    .combos-fritas__title h3{
+        font-size: 1.2rem;
+    }
 }
 
 
