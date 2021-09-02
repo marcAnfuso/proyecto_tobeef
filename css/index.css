@@ -231,7 +231,7 @@ h3 {
 .carousel-caption p {
   text-shadow: black 1px 1px 1px; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .main__title {
     margin-top: 1rem;
     border: #4b2424 1px;
