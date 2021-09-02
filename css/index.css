@@ -9,8 +9,6 @@
 
 html, body {
   font-family: 'Montserrat', sans-serif; }
-  max-width: 100% !important;
-  overflow-x: hidden !important;
 
 h4 {
   font-size: inherit; }
