@@ -8,7 +8,8 @@
   box-sizing: border-box; }
 
 html, body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; }
 
 h4 {
   font-size: inherit; }
@@ -129,7 +130,7 @@ h4 {
     flex-wrap: wrap;
     margin-bottom: 1rem; }
     .main-contenedor__card {
-      min-width: 300px;
+      width: 300px;
       height: 300px;
       background-color: black;
       margin: 1rem;
@@ -189,8 +190,8 @@ h4 {
     border: #4b2424 3px solid;
     border-radius: 5px;
     padding: 2rem;
-    min-width: 424px;
-    min-height: 350px; }
+    width: 424px;
+    height: 350px; }
   .box__textoUno {
     color: white;
     font-style: normal;
@@ -230,12 +231,13 @@ h3 {
 .carousel-caption p {
   text-shadow: black 1px 1px 1px; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 360px) {
   .main__title {
     margin-top: 1rem;
     border: #4b2424 1px;
     border-style: dashed;
-    padding: 1rem; }
+    padding: 1rem;
+    width: 310px; }
     .main__title h2 {
       padding: 0.5rem; }
   .main-contenedor {
@@ -245,15 +247,19 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     overflow-x: hidden;
-    width: auto;
     gap: 0.5rem;
-    border: none; }
+    border: none;
+    max-width: 360px;
+    margin: 0; }
     .main-contenedor__card {
       margin-top: 1.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 270px; }
     .main-contenedor__img {
       max-width: 250px; }
     .main-contenedor__link {
@@ -274,27 +280,34 @@ h3 {
       padding: 1rem; }
   .combos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 320px; }
     .combos h3 {
       text-decoration: underline;
       font-size: 20px; }
   .box {
-    display: flex;
-    flex-direction: column; }
+    align-items: center;
+    max-width: 360px;
+    justify-content: center; }
+    .box--left {
+      max-width: 300px;
+      height: 420px; }
     .box img {
-      width: 80%; }
+      max-width: 280px; }
+    .box__textoUno p {
+      font-size: 0.9rem; }
     .box__buttom {
       margin-top: 3rem;
       margin-bottom: 1rem; }
-    .box--left {
-      min-width: 424px;
-      min-height: 350px; }
   #carouselExampleCaptions {
     padding: 0.5rem 1.5rem; }
   .carousel-caption p {
-    font-size: 0.8rem;
+    margin-top: 2rem;
+    font-size: 0.7rem;
     color: white;
     font-weight: 900;
     text-shadow: black 1px 1px 1px; }
+  .carousel-caption h5 {
+    visibility: hidden; }
   .combos-fritas__title h3 {
     font-size: 1.2rem; } }
