@@ -1,3 +1,6 @@
+@import './scss/utilities/mixins';
+$colorBorder: rgb(75, 36, 36);
+
 .main {
     background-color: black;
     flex-wrap: wrap;
@@ -37,9 +40,8 @@
             margin: 1rem;
             border-radius: 5px;
             display: flex;
-            flex-direction: column;
+            @include flex(column, center);
             align-items: center;
-            justify-content: center;
             border: crimson solid 1px;
 
             a {
@@ -90,7 +92,6 @@
     margin-bottom: 1rem;
     flex-wrap: wrap;
     
-
     h2 {
         color: white;
         text-transform: uppercase;
@@ -115,17 +116,16 @@
 
 .box {
     display: flex;
-    flex-direction: row;
+    @include flex(row, space-evenly);
     align-items: center;
-    justify-content: space-evenly;
     gap: 4rem;
 
     img {
         width: 500px;
     }
 
-    &--left {
-        border: rgb(75, 36, 36) 3px solid;
+    &__left {
+        border: $colorBorder 3px solid;
         border-radius: 5px;
         padding: 2rem;
         width: 424px;
@@ -150,6 +150,7 @@
     }
     
     &__buttom { 
+        height: 50px;
         margin-top: 2rem;
         margin-bottom: 0.5rem;
 
@@ -163,7 +164,11 @@
                 color: black;
                 font-weight: 900;
             }
-        }   
+        }
+        
+        &--margin {
+            margin-top: 3.5rem;
+        }
     }
 }
 
@@ -188,13 +193,94 @@
         padding: 0rem 7rem;
     }
 
-    .carousel-caption p {
-        text-shadow: black 1px 1px 1px;
+    .carousel-caption {
+        padding-bottom: 0rem;
+        h5 {
+            text-shadow: crimson 1px 1px 1px;
+        }
+        p {
+            text-shadow: black 1px 1px 1px;
+        }
+        
     }
 
+    // Sector Snacks 
 
+    .snacks {
 
+        margin: 1rem;
 
+        &__contenedor {
+            flex-wrap: wrap;
+            border-top: grey 3px dotted;
+            padding-top: 1.5rem;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__img {
+            max-width: 550px;
+            border-bottom: $colorBorder 3px solid;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+        }
+
+        &__lista {
+            line-height: 3rem;
+            margin-top: 3rem;
+            padding: 1rem;
+            list-style-type: none;
+        }
+
+        &__item {
+            color: white;
+            border-bottom: 1px $colorBorder dotted;
+            text-align: left;
+
+            span {
+                color: crimson;
+            }
+        }
+
+        &__left {
+            border-left:$colorBorder solid 3px;
+            border-right:$colorBorder solid 3px;
+            border-top:$colorBorder solid 3px;
+        }
+
+        &__salsas {
+            border-left:$colorBorder solid 3px;
+            border-right:$colorBorder solid 3px;
+            border-bottom:$colorBorder solid 3px;
+
+            h3 {
+                padding-top: 1rem;
+                color:white;
+            }
+
+            p {
+                color: white;
+                padding-bottom: 1rem;
+            }
+            span {
+                color: crimson;
+            }
+        }
+
+    }
+
+    .main__buttonUp {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        background-color: crimson;
+        color: white;
+        text-decoration: none;
+    }
 
 
 
@@ -202,14 +288,14 @@
 
 // RESPONSIVE --------------------------------------------------------------
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:500px) {
 
     //combos
     .main {
 
         &__title {
             margin-top: 1rem;
-            border: rgb(75, 36, 36) 1px;
+            border: $colorBorder 1px;
             border-style: dashed;
             padding: 1rem;
             width: 310px;
@@ -232,9 +318,8 @@
             &__card {
                 margin-top: 1.5rem;
                 display: flex;
-                flex-direction: column;
+                @include flex(column, center);
                 align-items: center;
-                justify-content: center;
                 margin-left: 0;
                 margin-right: 0;
                 max-width: 270px;
@@ -268,7 +353,7 @@
         }
 
         &__title {
-            border: rgb(75, 36, 36) 1px;
+            border: $colorBorder 1px;
             border-style: dashed;
             padding: 1rem; 
         }
@@ -291,10 +376,15 @@
         align-items: center;
         max-width: 360px;
         justify-content: center;
+        gap: 2rem;
 
-        &--left {
+        &__left {
             max-width: 300px;
             height: 420px;
+
+            &--small {
+                height: 330px;
+            }
         }
 
         img {
@@ -313,7 +403,6 @@
         
     }   
      
-
     // Variedad de fritas 
 
     #carouselExampleCaptions {
@@ -321,9 +410,9 @@
     }
 
     .carousel-caption  {
-
+        padding-bottom: 0.75rem;
         p {
-            margin-top: 2rem;
+            margin-bottom: 0;
             font-size: 0.7rem;
             color: white;
             font-weight: 900;
@@ -339,6 +428,47 @@
     .combos-fritas__title h3{
         font-size: 1.2rem;
     }
+
+    // Snacks - nuggets y aros 
+
+    .snacks {
+        @include flex(column, center);
+        align-items: center;
+
+        &__card {
+            @include flex(column, center);
+        }
+
+        &__title {
+            font-size: 1rem;
+        }
+
+        &__img {
+            width: 320px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        &__lista {
+            margin: 0;
+        }
+
+        &__left {
+            margin-top: 2rem;
+        }
+
+        &__left {
+            border: none;
+            padding-top: 0;
+        }
+
+        &__salsas {
+            border: 2px solid $colorBorder;
+            padding: 1rem;
+        }
+
+    }
+
 }
 
 

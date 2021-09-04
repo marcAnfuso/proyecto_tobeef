@@ -1,8 +1,4 @@
-@mixin flex($direction, $justify) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-}
+@import './scss/utilities/mixins';
 
 .header {
     padding-top: 1rem;
@@ -34,15 +30,22 @@
         font-size: 1.5rem;
         font-weight: bold;
         padding-left: 2rem;
-        color: white;
+        color: crimson;
         text-decoration: none;
 
-        &--white:hover {
-            color: white;
+        &--red:hover {
+            color: crimson;
+        }
+
+        &--size {
+            display: block;
+            font-size: 0.9rem;
+            font-style: italic;
+            font-weight: 200;
         }
 
         span {
-            color: crimson;
+            color: white;
         }
     }
 

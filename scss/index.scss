@@ -1,6 +1,7 @@
-@import './partials/globals';
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import './partials/globals';
 @import './partials/header';
 @import './partials/main';
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-
+@import './partials/footer';
+@import './scss/pages/contacto.scss'

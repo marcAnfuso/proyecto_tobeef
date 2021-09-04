@@ -1,0 +1,92 @@
+@import './scss/utilities/mixins';
+
+
+.footer {
+    background-color: black;
+    margin-top: 3rem;
+    padding: 3rem 0;
+    border-top: 3px solid white;
+    text-align: center;
+
+    &__container {
+        @include flex(row, space-evenly);  
+        align-items: center;
+        text-align: center;   
+        flex-wrap: wrap;
+    }
+
+    &__lista {
+        @include flex(row, space-evenly);
+        gap: 2rem;
+        list-style: none;
+        padding-right: 3rem;
+    }
+
+    &__item {
+        @include flex(column, center);
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        &:hover {
+            color: crimson;
+        }
+    }
+
+    &__txt {
+        text-align: center;
+        color:white;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+}
+
+// colores de los "span" del footer
+
+.cwhite {
+    color: white;
+
+    &-small {
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+
+    &-large {
+        font-size: 1.5rem;
+    }
+}
+
+.cred {
+    color: crimson;
+
+    &-large {
+        font-size: 1.5rem;
+    }
+}
+
+// colores de los íconos de redes sociales
+
+.fa-instagram {
+    color: white;
+    font-size: 1rem;
+}
+
+.fa-whatsapp {
+    color: white;
+    font-size: 1rem;
+}
+
+
+// Responsive 
+@media screen and (max-width: 550px) {
+    .footer {
+        
+        &__container {
+            flex-direction: column;
+        }
+    }   
+}
+
+

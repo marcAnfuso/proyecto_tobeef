@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="To beef lomas, churrasquitos, hamburguesas">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
@@ -20,16 +21,19 @@
     <!--Header-->
     <header class="header">
         <nav class="header__nav"> 
-            <a href="#" class="header__logo header__logo--white">TO <span>Beef</span></a>
+            <a href="#" class="header__logo header__logo--red">
+                <span>TO</span> Beef<br>
+                <span class="header__logo--size">World&Grill</span>
+            </a>
             <ul class="header__lista">
                 <li class="header__item">
                     <a class="header__link" href="">Inicio</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__link" href="#productos">Productos</a>
+                    <a class="header__link" href="#combos">Combos</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__link" href="">Mi Carrito</a>
+                    <a class="header__link" href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -41,9 +45,9 @@
     </header>
 
     <!--Main-->
-    <main class="main">
+    <main class="main" id="inicio">
 
-        <div class="main__title" id="productos" data-aos="zoom-in">
+        <div class="main__title" id="combos" data-aos="zoom-in">
             <h2>NUESTROS COMBOS</h2>
         </div>
 
@@ -65,16 +69,16 @@
             </div>
 
             <div class="main-contenedor__card" data-aos="fade-right">
-                <a href="">
+                <a href="#mila">
                     <img class="main-contenedor__img" src="img/mila-pollo.jpeg" alt="Imagen de sándwich de milanesa de pollo ">
-                    <a href="" class="main-contenedor__link">Milanesas de pollo</a>
+                    <a href="#mila" class="main-contenedor__link">Milanesas de pollo</a>
                 </a>
             </div>
 
             <div class="main-contenedor__card" data-aos="fade-left">
-                <a href="">
+                <a href="#fritas">
                     <img class="main-contenedor__img" src="img/fritas-mex.jpeg" alt="Imagen de papas fritas">
-                    <a href="" class="main-contenedor__link">Papas fritas, snacks y otros</a>
+                    <a href="#fritas" class="main-contenedor__link">Papas fritas, snacks y otros</a>
                 </a>           
             </div>
 
@@ -134,7 +138,7 @@
                   data-aos-duration="2000">CHURRASQUITOS</h3>
                 <div class="box">
                     <img src="img/churra-pic.jpeg" alt="">
-                    <div class="box--left" data-aos="fade-up-left">
+                    <div class="box__left" data-aos="fade-up-left">
                         <div class="box__textoUno">
                             <p>
                                     - Churrasquito de ojo de bife<br>
@@ -168,7 +172,7 @@
                 data-aos-duration="2000">MILANESAS DE POLLO</h3>
               <div class="box">
                   <img src="img/mila-pollo.jpeg" alt="">
-                  <div class="box--left" data-aos="fade-up-left">
+                  <div class="box__left" data-aos="fade-up-left">
                       <div class="box__textoUno">
                           <p>
                                   - Milanesa de pechuga de pollo<br>
@@ -201,7 +205,7 @@
                 data-aos-duration="2000">HAMBURGUESAS EN COMBO PAÍS</h3>
                 <div class="box">
                     <img src="img/burg-ita.jpg" alt="">
-                    <div class="box--left" data-aos="fade-up-right">
+                    <div class="box__left" data-aos="fade-up-right">
                         <div class="box__textoUno">
                             <p>
                                     - Hamburguesa casera de 120gr<br>
@@ -218,7 +222,7 @@
                             </p>
                         </div>
 
-                        <div class="box__buttom">
+                        <div class="box__buttom box__buttom--margin">
                             <a href="#paises">Ver países</a>
                         </div>   
 
@@ -235,7 +239,7 @@
                 data-aos-duration="2000">HAMBURGUESAS BEEF</h3>
                 <div class="box">
                     <img src="img/burg-beef.jpg" alt="">
-                    <div class="box--left" data-aos="fade-up-left">
+                    <div class="box__left box__left--small" data-aos="fade-up-left">
                         <div class="box__textoUno">
                             <p>
                                     - Doble cheddar y bacon<br>
@@ -266,13 +270,6 @@
             </div>
             <!--Carousel de fritas-->
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="img/fritas-fra.jpeg" class="d-block w-100" alt="...">
@@ -305,8 +302,8 @@
                   <div class="carousel-item">
                     <img src="img/fritas-beef.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-md-block">
-                      <h5>Papas fritas To Beef</h5>
-                      <p>Porción de fritas acompañadas por nuestra salsa TO Beef, a base de pepinillos</p>
+                        <h5>Papas fritas To Beef</h5>
+                        <p>Porción de fritas acompañadas por nuestra salsa TO Beef, a base de pepinillos</p>
                     </div>
                   </div>
                 </div>
@@ -320,13 +317,93 @@
                 </button>
               </div>
         </section>
+        <!-- Sección de snacks -->
+        <section class="snacks">
 
-        
+            <div class="snacks__contenedor">
 
+                <h3 class="snacks__title">SNACKS - NUGGETS & AROS DE CEBOLLA</h3>
 
-
-    </main>
+                <div class="snacks__card">
+                    <div>
+                        <img class="snacks__img" src="img/mix.jpg" alt="">
+                    </div>
     
+                    <div class="snacks__left" data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <ul class="snacks__lista">
+                            <li class="snacks__item">
+                                <span><i class="fas fa-thumbtack"></i>
+                                    Combo #1 </span>- Nuggets de pollo<br>
+                                    10 unidades - 2 salsas a elección<br>
+                                    1 bebida a elección
+                            </li>
+
+                            <li class="snacks__item">
+                                <span><i class="fas fa-thumbtack"></i>
+                                    Combo #2</span> - Aros de cebolla<br>
+                                    10 unidades - 2 salsas a elección<br>
+                                    1 bebida a elección
+                            </li>
+
+                            <li class="snacks__item">
+                                <span><i class="fas fa-thumbtack"></i>
+                                    Combo #3</span> - Mix <br>
+                                    20 unidades - 3 salsas a elección<br>
+                                    2 bebida a elección
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- salsas -->
+            <div class="snacks__salsas" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h3>SALSAS:</h3>
+                <p>
+                    <span>Barbacoa </span>- Cheddar - <span>Salsa Golf -</span><br>
+                    Mayonesa <span>- Ketchup</span> - Salsa To Beef
+                </p>
+            </div>
+
+        </section>
+
+        <a class="main__buttonUp" href="#inicio">
+            Subir al Inicio <i class="fas fa-arrow-up"></i>
+        </a>
+    </main>
+    <!-- Footer -->
+    <footer class="footer"> 
+        <div class="footer__container">
+
+            <div class="footer__redes">
+                <p class="footer__txt">
+                    Seguinos en nuestras redes<br>
+                </p>
+                <ul class="footer__lista">
+                    <li class="footer__item">
+                        <i class="fab fa-instagram"></i>
+                        <a class="footer__link cwhite" href="">Instagram</a>
+                    </li>
+    
+                    <li class="footer__item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a class="footer__link cwhite" href="">WhatsAppp</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <p><span class="cwhite cwhite-large">TO</span> <span class="cred cred-large">Beef</span> <br> <span class="cwhite cwhite-small">World&Grill</span></p>
+            
+            <div>
+                <p class=>Copyright 2021 Manfuso &#169; Todos los derechos reservados</p>
+            </div>
+            
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

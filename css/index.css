@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap");
 *,
 *::after,
 *::before {
@@ -9,7 +9,8 @@
 
 html, body {
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: black; }
 
 h4 {
   font-size: inherit; }
@@ -41,12 +42,17 @@ h4 {
     font-size: 1.5rem;
     font-weight: bold;
     padding-left: 2rem;
-    color: white;
+    color: crimson;
     text-decoration: none; }
-    .header__logo--white:hover {
-      color: white; }
-    .header__logo span {
+    .header__logo--red:hover {
       color: crimson; }
+    .header__logo--size {
+      display: block;
+      font-size: 0.9rem;
+      font-style: italic;
+      font-weight: 200; }
+    .header__logo span {
+      color: white; }
   .header__title {
     text-align: center;
     color: white;
@@ -136,9 +142,10 @@ h4 {
       margin: 1rem;
       border-radius: 5px;
       display: flex;
+      display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       border: crimson solid 1px; }
       .main-contenedor__card a {
         text-decoration: none; }
@@ -180,13 +187,14 @@ h4 {
 
 .box {
   display: flex;
+  display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   gap: 4rem; }
   .box img {
     width: 500px; }
-  .box--left {
+  .box__left {
     border: #4b2424 3px solid;
     border-radius: 5px;
     padding: 2rem;
@@ -204,6 +212,7 @@ h4 {
       font-style: italic;
       font-weight: 700; }
   .box__buttom {
+    height: 50px;
     margin-top: 2rem;
     margin-bottom: 0.5rem; }
     .box__buttom a {
@@ -214,6 +223,8 @@ h4 {
       .box__buttom a:hover {
         color: black;
         font-weight: 900; }
+    .box__buttom--margin {
+      margin-top: 3.5rem; }
 
 h3 {
   color: white;
@@ -228,10 +239,65 @@ h3 {
 #carouselExampleCaptions {
   padding: 0rem 7rem; }
 
-.carousel-caption p {
-  text-shadow: black 1px 1px 1px; }
+.carousel-caption {
+  padding-bottom: 0rem; }
+  .carousel-caption h5 {
+    text-shadow: crimson 1px 1px 1px; }
+  .carousel-caption p {
+    text-shadow: black 1px 1px 1px; }
 
-@media screen and (max-width: 360px) {
+.snacks {
+  margin: 1rem; }
+  .snacks__contenedor {
+    flex-wrap: wrap;
+    border-top: grey 3px dotted;
+    padding-top: 1.5rem; }
+  .snacks__card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .snacks__img {
+    max-width: 550px;
+    border-bottom: #4b2424 3px solid;
+    padding-top: 3rem;
+    padding-bottom: 5rem; }
+  .snacks__lista {
+    line-height: 3rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    list-style-type: none; }
+  .snacks__item {
+    color: white;
+    border-bottom: 1px #4b2424 dotted;
+    text-align: left; }
+    .snacks__item span {
+      color: crimson; }
+  .snacks__left {
+    border-left: #4b2424 solid 3px;
+    border-right: #4b2424 solid 3px;
+    border-top: #4b2424 solid 3px; }
+  .snacks__salsas {
+    border-left: #4b2424 solid 3px;
+    border-right: #4b2424 solid 3px;
+    border-bottom: #4b2424 solid 3px; }
+    .snacks__salsas h3 {
+      padding-top: 1rem;
+      color: white; }
+    .snacks__salsas p {
+      color: white;
+      padding-bottom: 1rem; }
+    .snacks__salsas span {
+      color: crimson; }
+
+.main__buttonUp {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  text-decoration: none; }
+
+@media screen and (max-width: 500px) {
   .main__title {
     margin-top: 1rem;
     border: #4b2424 1px;
@@ -254,9 +320,10 @@ h3 {
     .main-contenedor__card {
       margin-top: 1.5rem;
       display: flex;
+      display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       margin-left: 0;
       margin-right: 0;
       max-width: 270px; }
@@ -288,10 +355,13 @@ h3 {
   .box {
     align-items: center;
     max-width: 360px;
-    justify-content: center; }
-    .box--left {
+    justify-content: center;
+    gap: 2rem; }
+    .box__left {
       max-width: 300px;
       height: 420px; }
+      .box__left--small {
+        height: 330px; }
     .box img {
       max-width: 280px; }
     .box__textoUno p {
@@ -301,13 +371,108 @@ h3 {
       margin-bottom: 1rem; }
   #carouselExampleCaptions {
     padding: 0.5rem 1.5rem; }
-  .carousel-caption p {
-    margin-top: 2rem;
-    font-size: 0.7rem;
-    color: white;
-    font-weight: 900;
-    text-shadow: black 1px 1px 1px; }
-  .carousel-caption h5 {
-    visibility: hidden; }
+  .carousel-caption {
+    padding-bottom: 0.75rem; }
+    .carousel-caption p {
+      margin-bottom: 0;
+      font-size: 0.7rem;
+      color: white;
+      font-weight: 900;
+      text-shadow: black 1px 1px 1px; }
+    .carousel-caption h5 {
+      visibility: hidden; }
   .combos-fritas__title h3 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .snacks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .snacks__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .snacks__title {
+      font-size: 1rem; }
+    .snacks__img {
+      width: 320px;
+      border-bottom: none;
+      padding-bottom: 0; }
+    .snacks__lista {
+      margin: 0; }
+    .snacks__left {
+      margin-top: 2rem; }
+    .snacks__left {
+      border: none;
+      padding-top: 0; }
+    .snacks__salsas {
+      border: 2px solid #4b2424;
+      padding: 1rem; } }
+
+.footer {
+  background-color: black;
+  margin-top: 3rem;
+  padding: 3rem 0;
+  border-top: 3px solid white;
+  text-align: center; }
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; }
+  .footer__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    list-style: none;
+    padding-right: 3rem; }
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer__link {
+    text-decoration: none; }
+    .footer__link:hover {
+      color: crimson; }
+  .footer__txt {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic; }
+
+.cwhite {
+  color: white; }
+  .cwhite-small {
+    font-size: 0.9rem;
+    font-style: italic; }
+  .cwhite-large {
+    font-size: 1.5rem; }
+
+.cred {
+  color: crimson; }
+  .cred-large {
+    font-size: 1.5rem; }
+
+.fa-instagram {
+  color: white;
+  font-size: 1rem; }
+
+.fa-whatsapp {
+  color: white;
+  font-size: 1rem; }
+
+@media screen and (max-width: 550px) {
+  .footer__container {
+    flex-direction: column; } }
+
+.contact__title {
+  color: white; }
+
+.contact__contenedor {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center; }
