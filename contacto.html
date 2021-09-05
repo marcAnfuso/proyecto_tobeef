@@ -19,28 +19,17 @@
     </script>
 
     <!--Header-->
-    <header class="header">
+    <header class="header header--margin">
         <nav class="header__nav"> 
             <a href="#" class="header__logo header__logo--red">
                 <span>TO</span> Beef<br>
                 <span class="header__logo--size">World&Grill</span>
             </a>
-            <ul class="header__lista">
-                <li class="header__item">
-                    <a class="header__link" href="index.html">Inicio</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="#combos">Combos</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="">Contacto</a>
-                </li>
-            </ul>
         </nav>
 
-        <div class="contenedor">
-            <div class="contenedor__div">
-                <div class="contenedor__title">
+        <div class="contenedor-form">
+            <div class="form__div">
+                <div class="form__title">
                     <h4>Dejanos tu mensaje:</h4>
                 </div>
                 <form class="form" action="">
@@ -48,11 +37,59 @@
                     <input type="text" id="name" name="name" required><br>
                     <label class="form__mail" for="correo">Correo electrónico</label><br>
                     <input type="text" id="correo" name="correo" required><br>
-                    <textarea class="form__txtarea" name="msj" id="msj" cols="30" rows="10" required placeholder="Escribí acá tu consulta ó mensaje"></textarea><br>
+                    <label class="form__cel" for="cel">Celular:</label><br>
+                    <input type="text" id="cel" name="cel" required><br>
+                    <textarea class="form__txtarea" name="msj" id="msj" cols="30" rows="15" required placeholder="Escribí acá tu consulta ó mensaje"></textarea><br>
                     <button class="form__btn" type="submit">Enviar</button>
 
                 </form>
             </div>
 
+            <div class="head__parrafo">
+                <p class="head__txt">
+                    En TO Beef nos interesa tu opinión. <br>
+                    Siempre nos preocupamos por mejorar<br>
+                    y satisfacer al cliente, por eso<br> 
+                    esperamos tu comentario para seguir creciendo,<br>
+                    escuchando lo que ustedes tienen para decirnos.<br>
+                    <span>¡Muchas gracias!</span>
+
+                </p>
+            </div>
+
         </div>
     </header>
+
+    <!-- Footer -->
+    <footer class="footer footer--noborder"> 
+        <div class="footer__container">
+
+            <div class="footer__redes">
+                <p class="footer__txt">
+                    Seguinos en nuestras redes<br>
+                </p>
+                <ul class="footer__lista">
+                    <li class="footer__item">
+                        <i class="fab fa-instagram"></i>
+                        <a class="footer__link cwhite" href="">Instagram</a>
+                    </li>
+    
+                    <li class="footer__item">
+                        <i class="fab fa-facebook"></i>
+                        <a class="footer__link cwhite" href="">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <p><span class="cwhite cwhite-large">TO</span> <span class="cred cred-large">Beef</span> <br> <span class="cwhite cwhite-small">World&Grill</span></p>
+            
+            <div>
+                <p class=>Copyright 2021 Manfuso &#169; Todos los derechos reservados</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    </body>
+
+    </html>

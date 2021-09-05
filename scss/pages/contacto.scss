@@ -1,11 +1,17 @@
 
-.contenedor {
+// estilos del form y texto
+
+.contenedor-form {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+.form {
+    
     &__title {
         color: white;
         text-transform: uppercase;
@@ -15,19 +21,17 @@
         width: 360px;
         padding: 1rem 0;
     }
-}
 
-.form {
-
-    &__name, &__mail, &__msj {
+    &__name, &__mail, &__msj, &__cel {
         color: crimson;
-        font-weight: 300;
+        font-weight: 400;
         text-shadow: 3px 3px 1px black;
     }
 
     &__txtarea {
         background-color: black;
         margin-top: 1rem;
+        opacity: 0.8;
 
         &:focus {
             color: white;
@@ -42,4 +46,45 @@
     }
 }
 
+
+.head__txt {
+    color: white;
+    font-style: italic;
+
+    span {
+        color: crimson;
+        text-transform: uppercase;
+        font-style:normal;
+    }    
+}
+
+.footer--noborder {
+    border: none;
+    margin-top: 0;
+}
+
+
+// Responsive
+
+@media screen and (max-width: 500px) {
+
+    .contenedor-form {
+        padding-top: 2rem;
+    }
+    .form__parrafo {
+        margin-bottom: 10rem;
+    }
+
+    .footer--noborder {
+        border: 3px solid white;
+    }
+
+    .head__txt {
+        font-weight: 600;
+    }
+
+    .header--margin {
+        margin-bottom: 10rem;
+    }
+}
 

@@ -68,6 +68,17 @@
         }
     }
 
+    &__sub {
+        text-align: center;
+        color: white;
+        padding-bottom: 6rem;
+
+        span {
+            color: crimson;
+        }
+
+    }
+
     &__lista {
         padding-right: 3rem;
         gap: 2rem;

@@ -66,6 +66,12 @@ h4 {
     .header__title h3 {
       color: white;
       text-shadow: 1px 3px 1px black; }
+  .header__sub {
+    text-align: center;
+    color: white;
+    padding-bottom: 6rem; }
+    .header__sub span {
+      color: crimson; }
   .header__lista {
     padding-right: 3rem;
     gap: 2rem;
@@ -461,7 +467,7 @@ h3 {
   color: white;
   font-size: 1rem; }
 
-.fa-whatsapp {
+.fa-facebook {
   color: white;
   font-size: 1rem; }
 
@@ -469,27 +475,31 @@ h3 {
   .footer__container {
     flex-direction: column; } }
 
-.contenedor {
+.contenedor-form {
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
   display: flex;
-  justify-content: center; }
-  .contenedor__title {
-    color: white;
-    text-transform: uppercase; }
-  .contenedor__div {
-    width: 360px;
-    padding: 1rem 0; }
+  flex-direction: column;
+  align-items: center; }
 
-.form__name, .form__mail, .form__msj {
+.form__title {
+  color: white;
+  text-transform: uppercase; }
+
+.form__div {
+  width: 360px;
+  padding: 1rem 0; }
+
+.form__name, .form__mail, .form__msj, .form__cel {
   color: crimson;
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: 3px 3px 1px black; }
 
 .form__txtarea {
   background-color: black;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  opacity: 0.8; }
   .form__txtarea:focus {
     color: white;
     font-style: italic; }
@@ -498,3 +508,27 @@ h3 {
   padding: 0.5rem;
   background-color: crimson;
   color: white; }
+
+.head__txt {
+  color: white;
+  font-style: italic; }
+  .head__txt span {
+    color: crimson;
+    text-transform: uppercase;
+    font-style: normal; }
+
+.footer--noborder {
+  border: none;
+  margin-top: 0; }
+
+@media screen and (max-width: 500px) {
+  .contenedor-form {
+    padding-top: 2rem; }
+  .form__parrafo {
+    margin-bottom: 10rem; }
+  .footer--noborder {
+    border: 3px solid white; }
+  .head__txt {
+    font-weight: 600; }
+  .header--margin {
+    margin-bottom: 10rem; } }
