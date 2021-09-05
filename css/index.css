@@ -469,10 +469,32 @@ h3 {
   .footer__container {
     flex-direction: column; } }
 
-.contact__title {
-  color: white; }
-
-.contact__contenedor {
+.contenedor {
   margin-top: auto;
   margin-bottom: auto;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  .contenedor__title {
+    color: white;
+    text-transform: uppercase; }
+  .contenedor__div {
+    width: 360px;
+    padding: 1rem 0; }
+
+.form__name, .form__mail, .form__msj {
+  color: crimson;
+  font-weight: 300;
+  text-shadow: 3px 3px 1px black; }
+
+.form__txtarea {
+  background-color: black;
+  margin-top: 1rem; }
+  .form__txtarea:focus {
+    color: white;
+    font-style: italic; }
+
+.form__btn {
+  padding: 0.5rem;
+  background-color: crimson;
+  color: white; }

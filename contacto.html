@@ -38,13 +38,21 @@
             </ul>
         </nav>
 
-        <div class="contact__contenedor">
-            <div class="contact__title">
-                <h2>Dejanos tu mensaje/consulta:</h2>
+        <div class="contenedor">
+            <div class="contenedor__div">
+                <div class="contenedor__title">
+                    <h4>Dejanos tu mensaje:</h4>
+                </div>
+                <form class="form" action="">
+                    <label class="form__name" for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label class="form__mail" for="correo">Correo electrónico</label><br>
+                    <input type="text" id="correo" name="correo" required><br>
+                    <textarea class="form__txtarea" name="msj" id="msj" cols="30" rows="10" required placeholder="Escribí acá tu consulta ó mensaje"></textarea><br>
+                    <button class="form__btn" type="submit">Enviar</button>
+
+                </form>
             </div>
-            <form class="form" action="">
-                <label for=""></label>
-            </form>
 
         </div>
     </header>

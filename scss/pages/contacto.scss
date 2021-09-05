@@ -1,11 +1,45 @@
 
-.contact__title {
-    color: white;
-}
-
-.contact__contenedor {
+.contenedor {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+
+    &__title {
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__div {
+        width: 360px;
+        padding: 1rem 0;
+    }
 }
+
+.form {
+
+    &__name, &__mail, &__msj {
+        color: crimson;
+        font-weight: 300;
+        text-shadow: 3px 3px 1px black;
+    }
+
+    &__txtarea {
+        background-color: black;
+        margin-top: 1rem;
+
+        &:focus {
+            color: white;
+            font-style: italic;
+        }
+    }
+
+    &__btn {
+        padding: 0.5rem;
+        background-color: crimson;
+        color: white;
+    }
+}
+
 
