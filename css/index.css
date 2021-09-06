@@ -103,18 +103,7 @@ h4 {
     .header__title h3 span {
       color: crimson; }
   .header__lista {
-    padding-left: 1rem;
-    padding-right: 0;
-    gap: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-  .header__item {
-    list-style: disc;
-    color: white; }
-  .header__link {
-    font-size: 1.5rem;
-    font-weight: 400; } }
+    display: none; } }
 
 .main {
   background-color: black;
@@ -240,7 +229,7 @@ h3 {
   border-top: grey 3px dotted;
   padding-bottom: 2rem; }
   .combos-fritas__title {
-    padding-top: 2rem; }
+    padding-top: 3rem; }
 
 #carouselExampleCaptions {
   padding: 0rem 7rem; }
@@ -257,7 +246,7 @@ h3 {
   .snacks__contenedor {
     flex-wrap: wrap;
     border-top: grey 3px dotted;
-    padding-top: 1.5rem; }
+    padding-top: 3rem; }
   .snacks__card {
     display: flex;
     flex-direction: row;
@@ -277,7 +266,8 @@ h3 {
     border-bottom: 1px #4b2424 dotted;
     text-align: left; }
     .snacks__item span {
-      color: crimson; }
+      color: crimson;
+      font-weight: 500; }
   .snacks__left {
     border-left: #4b2424 solid 3px;
     border-right: #4b2424 solid 3px;
@@ -291,7 +281,8 @@ h3 {
       color: white; }
     .snacks__salsas p {
       color: white;
-      padding-bottom: 1rem; }
+      padding-bottom: 1rem;
+      font-weight: 600; }
     .snacks__salsas span {
       color: crimson; }
 
@@ -302,6 +293,23 @@ h3 {
   background-color: crimson;
   color: white;
   text-decoration: none; }
+  .main__buttonUp:hover {
+    color: black;
+    font-weight: 800; }
+
+.txt__menu p {
+  color: white; }
+
+.link__menu {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: white;
+  color: crimson;
+  text-decoration: none; }
+  .link__menu:hover {
+    color: black;
+    font-weight: 800; }
 
 @media screen and (max-width: 500px) {
   .main__title {
@@ -483,6 +491,9 @@ h3 {
   flex-direction: column;
   align-items: center; }
 
+.form__inputt {
+  box-shadow: 20px 20px 10px black; }
+
 .form__title {
   color: white;
   text-transform: uppercase; }
@@ -494,7 +505,7 @@ h3 {
 .form__name, .form__mail, .form__msj, .form__cel {
   color: crimson;
   font-weight: 400;
-  text-shadow: 3px 3px 1px black; }
+  text-shadow: 3px 3px 1px 1px black; }
 
 .form__txtarea {
   background-color: black;
@@ -507,11 +518,16 @@ h3 {
 .form__btn {
   padding: 0.5rem;
   background-color: crimson;
-  color: white; }
+  color: white;
+  margin-top: 1rem; }
+  .form__btn:hover {
+    color: crimson;
+    background-color: white; }
 
 .head__txt {
   color: white;
-  font-style: italic; }
+  font-style: italic;
+  font-weight: 700; }
   .head__txt span {
     color: crimson;
     text-transform: uppercase;
@@ -527,7 +543,7 @@ h3 {
   .form__parrafo {
     margin-bottom: 10rem; }
   .footer--noborder {
-    border: 3px solid white; }
+    border-top: 3px solid white; }
   .head__txt {
     font-weight: 600; }
   .header--margin {

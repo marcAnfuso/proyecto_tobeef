@@ -185,7 +185,7 @@ $colorBorder: rgb(75, 36, 36);
         padding-bottom: 2rem;
 
         &__title {
-            padding-top: 2rem;
+            padding-top: 3rem;
         }
     }
 
@@ -213,7 +213,7 @@ $colorBorder: rgb(75, 36, 36);
         &__contenedor {
             flex-wrap: wrap;
             border-top: grey 3px dotted;
-            padding-top: 1.5rem;
+            padding-top: 3rem;
         }
 
         &__card {
@@ -243,6 +243,7 @@ $colorBorder: rgb(75, 36, 36);
 
             span {
                 color: crimson;
+                font-weight: 500;
             }
         }
 
@@ -265,6 +266,7 @@ $colorBorder: rgb(75, 36, 36);
             p {
                 color: white;
                 padding-bottom: 1rem;
+                font-weight: 600;
             }
             span {
                 color: crimson;
@@ -280,6 +282,29 @@ $colorBorder: rgb(75, 36, 36);
         background-color: crimson;
         color: white;
         text-decoration: none;
+
+        &:hover {
+            color: black;
+            font-weight: 800;
+        }
+    }
+
+    .txt__menu p{
+        color: white;
+    }
+
+    .link__menu {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        background-color: white;
+        color: crimson;
+        text-decoration: none;
+
+        &:hover {
+            color: black;
+            font-weight: 800;
+        }
     }
 
 

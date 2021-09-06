@@ -75,6 +75,7 @@
 
         span {
             color: crimson;
+
         }
 
     }
@@ -133,19 +134,7 @@
         }
 
         &__lista {
-            padding-left: 1rem;
-            padding-right: 0;
-            gap: 1.5rem;
-            @include flex(column, space-evenly);
+            display: none;
         }   
-        &__item {
-            list-style: disc;
-            color: white;
-        }
-
-        &__link {
-            font-size: 1.5rem;
-            font-weight: 400;
-        }
     }
 }

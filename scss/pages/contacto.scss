@@ -12,6 +12,10 @@
 
 .form {
     
+    &__inputt {
+        box-shadow: 20px 20px 10px black;
+    }
+
     &__title {
         color: white;
         text-transform: uppercase;
@@ -25,14 +29,14 @@
     &__name, &__mail, &__msj, &__cel {
         color: crimson;
         font-weight: 400;
-        text-shadow: 3px 3px 1px black;
+        text-shadow: 3px 3px 1px 1px black;
     }
 
     &__txtarea {
         background-color: black;
         margin-top: 1rem;
         opacity: 0.8;
-
+        
         &:focus {
             color: white;
             font-style: italic;
@@ -43,6 +47,12 @@
         padding: 0.5rem;
         background-color: crimson;
         color: white;
+        margin-top: 1rem;
+
+        &:hover {
+            color: crimson;
+            background-color: white;
+        }
     }
 }
 
@@ -50,6 +60,7 @@
 .head__txt {
     color: white;
     font-style: italic;
+    font-weight: 700;
 
     span {
         color: crimson;
@@ -76,7 +87,7 @@
     }
 
     .footer--noborder {
-        border: 3px solid white;
+        border-top: 3px solid white;
     }
 
     .head__txt {

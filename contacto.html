@@ -21,30 +21,19 @@
     <!--Header-->
     <header class="header header--margin">
         <nav class="header__nav"> 
-            <a href="#" class="header__logo header__logo--red">
+            <a href="index.html" class="header__logo header__logo--red">
                 <span>TO</span> Beef<br>
                 <span class="header__logo--size">World&Grill</span>
             </a>
+
+            <ul class="header__lista">
+                <li class="header__item">
+                    <a class="header__link" href="index.html">Inicio</a>
+                </li>
+            </ul>
         </nav>
 
         <div class="contenedor-form">
-            <div class="form__div">
-                <div class="form__title">
-                    <h4>Dejanos tu mensaje:</h4>
-                </div>
-                <form class="form" action="">
-                    <label class="form__name" for="name">Nombre:</label><br>
-                    <input type="text" id="name" name="name" required><br>
-                    <label class="form__mail" for="correo">Correo electrónico</label><br>
-                    <input type="text" id="correo" name="correo" required><br>
-                    <label class="form__cel" for="cel">Celular:</label><br>
-                    <input type="text" id="cel" name="cel" required><br>
-                    <textarea class="form__txtarea" name="msj" id="msj" cols="30" rows="15" required placeholder="Escribí acá tu consulta ó mensaje"></textarea><br>
-                    <button class="form__btn" type="submit">Enviar</button>
-
-                </form>
-            </div>
-
             <div class="head__parrafo">
                 <p class="head__txt">
                     En TO Beef nos interesa tu opinión. <br>
@@ -55,6 +44,19 @@
                     <span>¡Muchas gracias!</span>
 
                 </p>
+            </div>
+            <div class="form__div">
+                <form class="form" action="">
+                    <label class="form__name" for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label class="form__mail" for="correo">Correo electrónico</label><br>
+                    <input type="text" id="correo" name="correo" required><br>
+                    <label class="form__cel" for="cel">Celular:</label><br>
+                    <input type="text" id="cel" name="cel" required><br>
+                    <textarea class="form__txtarea form__inputt" name="msj" id="msj" cols="30" rows="15" required placeholder="Escribí acá tu consulta ó mensaje"></textarea><br>
+                    <button class="form__btn" type="submit">Enviar</button>
+
+                </form>
             </div>
 
         </div>
