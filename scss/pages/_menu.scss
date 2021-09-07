@@ -1,0 +1,205 @@
+@import './scss/utilities/mixins';
+
+.main-menu {
+ 
+    margin: 1rem;
+
+    &__iconUno {
+        text-align: center;
+        font-size: 2.5rem;
+        color: goldenrod;
+    }
+
+    &__container {
+        @include flex(row, space-evenly);
+        align-items: center;
+    }
+
+}
+
+.menu-paises {
+    border: 1px solid crimson;
+    border-radius: 5px;
+
+    &__container {
+
+        padding: 1rem 2rem;
+        img {
+            width: 35px;
+        }
+    }
+
+    &__title {
+        padding: 1rem 1rem 0 1rem;
+        color: crimson;
+    }
+
+    &__lista {
+        line-height: 5rem;
+
+        li {
+            color: white;
+            list-style: none;
+            font-style: italic;
+            font-weight: 700;
+
+            span {
+                color:goldenrod;
+                font-style: normal;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.menu-comboPais {
+    border: 1px solid crimson;
+    border-radius: 5px;
+    padding-right: 2rem;
+
+
+    &__lista {
+
+        li {
+            color: white;
+            list-style: none;
+            font-style: italic;
+            border-bottom: 2px dotted grey;
+            font-weight: 700;
+            padding-top: 2.2rem;
+
+            span {
+                color:goldenrod;
+                font-style: normal;
+                font-weight: 800;
+            }
+
+            p {
+                color: crimson;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.menu-burger {
+    margin-left: 8.3rem;
+    border: 1px solid crimson;
+    width: 500px;
+    h2 {
+        color: crimson;
+        text-transform: uppercase;
+        margin: 1rem 0 1rem 2rem;
+
+    }
+
+    &__container {
+        padding-left: 1rem;
+    }
+
+    &__lista {
+        
+        p {
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+
+        span {
+            color: crimson;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            i {
+                color: goldenrod;
+            }
+        }
+    }
+}
+
+
+
+
+
+// Responsive 
+
+@media screen and (max-width: 550px) {
+
+    // Header 
+
+    .header {
+
+        &__sub {
+            padding-bottom: 2rem;
+        }
+    }
+
+    // Main
+    .main-menu {
+        align-items: center;
+        &__iconUno {
+            display: none;
+        }
+    
+        &__container {
+            @include flex(column, center);
+        }
+    
+    }
+
+    // Países disponibles
+
+    .menu-paises {
+        margin-bottom: 2rem;
+
+        &__container {
+            
+            padding: 0;
+            img {
+                width: 30px;
+            }
+        }
+    
+        &__title {
+            padding: 1rem 1rem 0 1rem;
+            color: crimson;
+        }
+    
+        &__lista {
+            line-height: 2rem;
+
+            li {
+                padding-bottom: 0.5rem;
+                padding-right: 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    }
+     
+    // combos por país
+    .menu-comboPais {
+        margin-bottom: 2rem;
+    }
+
+    // Combos "beef"
+
+    .menu-burger {
+        margin-left: 0rem;
+        width: 100%;
+
+        &__container {
+            padding-left: 0;
+        }
+
+        &__lista {
+
+            li {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+
+

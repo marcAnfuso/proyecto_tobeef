@@ -10,9 +10,20 @@
 html, body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    background-color: black;
+    background: black;
 }
-
+// Sacando estilo de bootstrap
 h4 {
     font-size: inherit;
+}
+
+// Sacando subrayado a enlaces
+a {
+    text-decoration: none;
+}
+
+// Sacando viñetas de list-items
+
+li {
+    list-style: none;
 }

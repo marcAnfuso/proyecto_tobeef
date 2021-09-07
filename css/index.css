@@ -10,10 +10,35 @@
 html, body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
-  background-color: black; }
+  background: black; }
 
 h4 {
   font-size: inherit; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.pedido__wpp {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  font-size: 1rem;
+  color: white;
+  z-index: 100; }
+  .pedido__wpp:hover {
+    color: white; }
+  .pedido__wpp i {
+    font-size: 3rem;
+    background-color: green;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px; }
+
+.contenedor__wpp {
+  text-align: center; }
 
 .header {
   padding-top: 1rem;
@@ -78,8 +103,6 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
-  .header__item {
-    list-style: none; }
   .header__link {
     text-decoration: none;
     color: white;
@@ -103,7 +126,15 @@ h4 {
     .header__title h3 span {
       color: crimson; }
   .header__lista {
-    display: none; } }
+    display: none; }
+  .pedido__wpp {
+    bottom: 1%;
+    right: 1%;
+    font-size: 0.7rem; }
+    .pedido__wpp i {
+      font-size: 2rem;
+      width: 30px;
+      height: 30px; } }
 
 .main {
   background-color: black;
@@ -259,8 +290,7 @@ h3 {
   .snacks__lista {
     line-height: 3rem;
     margin-top: 3rem;
-    padding: 1rem;
-    list-style-type: none; }
+    padding: 1rem; }
   .snacks__item {
     color: white;
     border-bottom: 1px #4b2424 dotted;
@@ -424,7 +454,7 @@ h3 {
       padding: 1rem; } }
 
 .footer {
-  background-color: black;
+  background: black;
   margin-top: 3rem;
   padding: 3rem 0;
   border-top: 3px solid white;
@@ -441,7 +471,6 @@ h3 {
     flex-direction: row;
     justify-content: space-evenly;
     gap: 2rem;
-    list-style: none;
     padding-right: 3rem; }
   .footer__item {
     display: flex;
@@ -548,3 +577,113 @@ h3 {
     font-weight: 600; }
   .header--margin {
     margin-bottom: 10rem; } }
+
+.main-menu {
+  margin: 1rem; }
+  .main-menu__iconUno {
+    text-align: center;
+    font-size: 2.5rem;
+    color: goldenrod; }
+  .main-menu__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+
+.menu-paises {
+  border: 1px solid crimson;
+  border-radius: 5px; }
+  .menu-paises__container {
+    padding: 1rem 2rem; }
+    .menu-paises__container img {
+      width: 35px; }
+  .menu-paises__title {
+    padding: 1rem 1rem 0 1rem;
+    color: crimson; }
+  .menu-paises__lista {
+    line-height: 5rem; }
+    .menu-paises__lista li {
+      color: white;
+      list-style: none;
+      font-style: italic;
+      font-weight: 700; }
+      .menu-paises__lista li span {
+        color: goldenrod;
+        font-style: normal;
+        font-weight: 800; }
+
+.menu-comboPais {
+  border: 1px solid crimson;
+  border-radius: 5px;
+  padding-right: 2rem; }
+  .menu-comboPais__lista li {
+    color: white;
+    list-style: none;
+    font-style: italic;
+    border-bottom: 2px dotted grey;
+    font-weight: 700;
+    padding-top: 2.2rem; }
+    .menu-comboPais__lista li span {
+      color: goldenrod;
+      font-style: normal;
+      font-weight: 800; }
+    .menu-comboPais__lista li p {
+      color: crimson;
+      text-transform: uppercase; }
+
+.menu-burger {
+  margin-left: 8.3rem;
+  border: 1px solid crimson;
+  width: 500px; }
+  .menu-burger h2 {
+    color: crimson;
+    text-transform: uppercase;
+    margin: 1rem 0 1rem 2rem; }
+  .menu-burger__container {
+    padding-left: 1rem; }
+  .menu-burger__lista p {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  .menu-burger__lista span {
+    color: crimson; }
+  .menu-burger__lista li {
+    margin-bottom: 1rem; }
+    .menu-burger__lista li i {
+      color: goldenrod; }
+
+@media screen and (max-width: 550px) {
+  .header__sub {
+    padding-bottom: 2rem; }
+  .main-menu {
+    align-items: center; }
+    .main-menu__iconUno {
+      display: none; }
+    .main-menu__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+  .menu-paises {
+    margin-bottom: 2rem; }
+    .menu-paises__container {
+      padding: 0; }
+      .menu-paises__container img {
+        width: 30px; }
+    .menu-paises__title {
+      padding: 1rem 1rem 0 1rem;
+      color: crimson; }
+    .menu-paises__lista {
+      line-height: 2rem; }
+      .menu-paises__lista li {
+        padding-bottom: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 0.9rem; }
+  .menu-comboPais {
+    margin-bottom: 2rem; }
+  .menu-burger {
+    margin-left: 0rem;
+    width: 100%; }
+    .menu-burger__container {
+      padding-left: 0; }
+    .menu-burger__lista li {
+      font-size: 0.9rem; } }

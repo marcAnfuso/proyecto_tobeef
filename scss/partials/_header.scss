@@ -1,5 +1,30 @@
 @import './scss/utilities/mixins';
 
+.pedido__wpp {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    font-size: 1rem;
+    color: white;
+    z-index: 100;
+
+    &:hover {
+        color: white;
+    }
+
+    i {
+        font-size: 3rem;
+        background-color: green;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.contenedor__wpp {
+    text-align: center;
+}
+
 .header {
     padding-top: 1rem;
     background-color: black;
@@ -84,10 +109,7 @@
         padding-right: 3rem;
         gap: 2rem;
         @include flex(row, space-around);
-    }
-    &__item {
-        list-style: none;
-    }    
+    }  
     &__link {
         text-decoration: none;
         color: white;
@@ -135,6 +157,18 @@
 
         &__lista {
             display: none;
-        }   
+        }
+    }
+
+    .pedido__wpp {
+        bottom: 1%;
+        right: 1%;
+        font-size: 0.7rem;
+
+        i {
+            font-size: 2rem;
+            width: 30px;
+            height: 30px;
+        }
     }
 }
