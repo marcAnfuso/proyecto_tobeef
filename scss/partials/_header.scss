@@ -141,6 +141,10 @@
             padding-left: 1rem;
         }
 
+        &__sub {
+            margin-bottom: 3rem;
+        }
+
         &__title {
             padding-left: 0;
 
@@ -161,7 +165,7 @@
     }
 
     .pedido__wpp {
-        bottom: 1%;
+        bottom: 3%;
         right: 1%;
         font-size: 0.7rem;
 

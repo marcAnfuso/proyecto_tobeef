@@ -119,6 +119,8 @@ li {
     justify-content: space-around;
     gap: 3rem;
     padding-left: 1rem; }
+  .header__sub {
+    margin-bottom: 3rem; }
   .header__title {
     padding-left: 0; }
     .header__title h1 {
@@ -128,7 +130,7 @@ li {
   .header__lista {
     display: none; }
   .pedido__wpp {
-    bottom: 1%;
+    bottom: 3%;
     right: 1%;
     font-size: 0.7rem; }
     .pedido__wpp i {
@@ -236,7 +238,7 @@ li {
       color: crimson;
       text-transform: uppercase;
       font-style: italic;
-      font-weight: 700; }
+      font-weight: 900; }
   .box__buttom {
     height: 50px;
     margin-top: 2rem;
@@ -616,6 +618,8 @@ h3 {
   border: 1px solid crimson;
   border-radius: 5px;
   padding-right: 2rem; }
+  .menu-comboPais__lista li:nth-child(5) {
+    border: none; }
   .menu-comboPais__lista li {
     color: white;
     list-style: none;
@@ -632,25 +636,88 @@ h3 {
       text-transform: uppercase; }
 
 .menu-burger {
-  margin-left: 8.3rem;
+  margin-top: 2rem;
   border: 1px solid crimson;
-  width: 500px; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 8rem;
+  margin-right: 8rem; }
   .menu-burger h2 {
     color: crimson;
     text-transform: uppercase;
     margin: 1rem 0 1rem 2rem; }
   .menu-burger__container {
-    padding-left: 1rem; }
-  .menu-burger__lista p {
-    color: white;
+    padding-right: 4.5rem; }
+  .menu-burger__lista {
+    padding-top: 1.5rem; }
+    .menu-burger__lista p {
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    .menu-burger__lista span {
+      color: crimson; }
+    .menu-burger__lista li {
+      margin-bottom: 1rem; }
+      .menu-burger__lista li i {
+        color: goldenrod; }
+
+.otros__lista {
+  margin-top: 2rem; }
+  .otros__lista p {
     text-transform: uppercase;
     margin-bottom: 0; }
-  .menu-burger__lista span {
+  .otros__lista span {
     color: crimson; }
-  .menu-burger__lista li {
+  .otros__lista li {
+    color: white;
     margin-bottom: 1rem; }
-    .menu-burger__lista li i {
+    .otros__lista li i {
       color: goldenrod; }
+
+.fritas__container {
+  padding-right: 3.5rem; }
+
+.fritas__lista {
+  padding-top: 1.1rem; }
+  .fritas__lista li {
+    color: white;
+    list-style: none;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 1.3rem; }
+    .fritas__lista li img {
+      width: 35px; }
+    .fritas__lista li p {
+      color: crimson;
+      margin-bottom: 0.5rem; }
+    .fritas__lista li span {
+      color: goldenrod;
+      font-style: normal;
+      font-weight: 800; }
+
+.nug__lista {
+  margin-top: 2rem; }
+  .nug__lista li {
+    color: crimson;
+    margin-bottom: 1.5rem; }
+    .nug__lista li i {
+      color: #e6ba4d; }
+    .nug__lista li p {
+      color: white;
+      margin-bottom: 0rem; }
+      .nug__lista li p span {
+        color: goldenrod; }
+
+.nug__salsas {
+  padding-left: 2rem;
+  margin-top: 3rem; }
+  .nug__salsas h3 {
+    color: crimson; }
+  .nug__salsas p {
+    color: white; }
+    .nug__salsas p span {
+      color: crimson; }
 
 @media screen and (max-width: 550px) {
   .header__sub {
@@ -682,7 +749,10 @@ h3 {
     margin-bottom: 2rem; }
   .menu-burger {
     margin-left: 0rem;
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     .menu-burger__container {
       padding-left: 0; }
     .menu-burger__lista li {
