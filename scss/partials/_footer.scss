@@ -78,7 +78,7 @@
 }
 
 
-// Responsive 
+// Responsive  --------------------
 @media screen and (max-width: 550px) {
     .footer {
         
@@ -89,3 +89,17 @@
 }
 
 
+
+@media screen and (max-width:768px) {
+    .footer {
+
+        &__container {
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        &__redes {
+            padding-right: 2rem;
+        }
+    }
+}

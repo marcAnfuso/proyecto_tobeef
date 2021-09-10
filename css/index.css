@@ -95,6 +95,8 @@ li {
     text-align: center;
     color: white;
     padding-bottom: 6rem; }
+    .header__sub i {
+      animation: moveUpDown infinite 6s; }
     .header__sub span {
       color: crimson; }
   .header__lista {
@@ -109,6 +111,16 @@ li {
     font-weight: 700; }
     .header__link:hover {
       color: crimson; }
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0rem); }
+  50% {
+    transform: translateY(1rem); }
+  90% {
+    transform: translateY(-1rem); }
+  100% {
+    transform: translateY(0rem); } }
 
 @media screen and (max-width: 600px) {
   .header__logo {
@@ -455,6 +467,10 @@ h3 {
       border: 2px solid #4b2424;
       padding: 1rem; } }
 
+@media screen and (max-width: 768px) {
+  .snacks__card {
+    flex-direction: column; } }
+
 .footer {
   background: black;
   margin-top: 3rem;
@@ -513,6 +529,13 @@ h3 {
 @media screen and (max-width: 550px) {
   .footer__container {
     flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    justify-content: center;
+    gap: 2rem; }
+  .footer__redes {
+    padding-right: 2rem; } }
 
 .contenedor-form {
   margin-top: auto;
@@ -642,7 +665,8 @@ h3 {
   flex-direction: row;
   justify-content: space-evenly;
   margin-left: 8rem;
-  margin-right: 8rem; }
+  margin-right: 8rem;
+  flex-wrap: wrap; }
   .menu-burger h2 {
     color: crimson;
     text-transform: uppercase;

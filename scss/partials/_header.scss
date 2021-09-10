@@ -98,6 +98,10 @@
         color: white;
         padding-bottom: 6rem;
 
+        i {
+            animation: moveUpDown infinite 6s;
+        }
+
         span {
             color: crimson;
 
@@ -124,7 +128,12 @@
 
 
 
-
+@keyframes moveUpDown {
+    0% {transform: translateY(0rem);}
+    50%{transform: translateY(1rem);}
+    90%{transform: translateY(-1rem);}
+    100%{transform: translateY(0rem);}
+}
 
 
 
