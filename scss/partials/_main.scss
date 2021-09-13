@@ -307,12 +307,41 @@ $colorBorder: rgb(75, 36, 36);
     }
 
 
+    // Grid de comentarios
+
+    .comments {
+
+        margin-top: 3rem;
+
+        &__container {
+            display: grid;
+            margin-top: 1rem;
+            gap: 0.5rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__card {
+            border: 1px solid crimson;
+            border-radius: 5cm;
+            width: 390px;
+            height: 90px;
+        }
+
+        &__img {
+            width: 390px;
+            height: 90px;
+            border-radius: 5cm;
+        }
+        
+    }
+
+
 
 
 
 // RESPONSIVE --------------------------------------------------------------
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:550px) {
 
     //combos
     .main {
@@ -491,6 +520,21 @@ $colorBorder: rgb(75, 36, 36);
             padding: 1rem;
         }
 
+    }
+
+    // comentarios
+
+    .comments {
+        text-align: center;
+
+        &__container {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+
+        &__card, &__img {
+            width: 320px;
+        }
     }
 
 }
