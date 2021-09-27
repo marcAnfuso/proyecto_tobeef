@@ -91,6 +91,10 @@ li {
     .header__title h3 {
       color: white;
       text-shadow: 1px 3px 1px black; }
+    .header__title p {
+      text-transform: uppercase; }
+    .header__title a {
+      color: crimson; }
   .header__sub {
     text-align: center;
     color: white;
