@@ -809,3 +809,33 @@ h3 {
       padding-left: 0; }
     .menu-burger__lista li {
       font-size: 0.9rem; } }
+
+.carritoActual {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  width: 350px;
+  background-color: darkgray;
+  height: 300px;
+  overflow-y: scroll; }
+
+table {
+  width: 300px;
+  border: 1px solid grey; }
+
+.container-items {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(3, 450px);
+  gap: 2rem;
+  margin: 2rem; }
+
+.card-item {
+  min-height: 300px;
+  width: 450px; }
+  .card-item img {
+    width: 450px; }
+  .card-item h4 {
+    color: white; }
+  .card-item p {
+    color: crimson; }
