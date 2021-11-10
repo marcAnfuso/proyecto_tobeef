@@ -18,6 +18,20 @@ function addToCartClick(event) {
 }
 
 function addItemToCart(itemTit, itemPri) {
+
+    const elementsTitle = shopCartContainer.getElementsByClassName('item-name');
+
+    for (let i = 0; i < elementsTitle.length; i++) {
+        if (elementsTitle[i].innerText === itemTit) {
+            let ElementsCantidaad = elementsTitle[i].parentElement.parentElement.parentElement.querySelector('.item-cantidad')
+            ElementsCantidaad.value++;
+
+            actualizarTotalCarrito();
+
+            return;
+        }
+    }
+
     const cartRow = document.createElement('div');
     const cartContent =  `
     <div class="item-carro">
@@ -43,6 +57,10 @@ function addItemToCart(itemTit, itemPri) {
     console.log(cartRow)
     
     shopCartContainer.append(cartRow);
+
+    cartRow.querySelector('.buttonDelete').addEventListener('click', removerItem);
+
+    cartRow.querySelector('.item-cantidad').addEventListener('change', cambioCantidad);
 
     actualizarTotalCarrito();
 }
@@ -70,4 +88,20 @@ function actualizarTotalCarrito() {
     cartTotal.innerHTML = `$${total}`;
 }
 
+function removerItem(event) {
+    const buttonClicked = event.target;
+
+    buttonClicked.closest('.item-carro').remove();
+    actualizarTotalCarrito();
+}
+
+function cambioCantidad(event) {
+    const input = event.target;
+
+    if (input.value <= 0) {
+        input.value = 1;
+    }
+
+    actualizarTotalCarrito();
+}
 
