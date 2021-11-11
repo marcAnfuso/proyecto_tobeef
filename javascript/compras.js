@@ -1,7 +1,7 @@
 
 const addToCartButtons = document.querySelectorAll('.btnAgregar');
 addToCartButtons.forEach(addToCartButton => {
-    addToCartButton.addEventListener('click', addToCartClick);
+    addToCartButton.addEventListener('click',addToCartClick);
 });
 
 // variable contenedora de los items agregados al carrito 
