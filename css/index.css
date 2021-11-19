@@ -632,7 +632,9 @@ h3 {
     margin-bottom: 10rem; } }
 
 .main-menu {
-  margin: 1rem; }
+  margin: 1rem;
+  display: flex;
+  flex-direction: column; }
   .main-menu__iconUno {
     text-align: center;
     font-size: 2.5rem;

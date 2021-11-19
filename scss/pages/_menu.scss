@@ -3,6 +3,8 @@
 .main-menu {
  
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 
     &__iconUno {
         text-align: center;
