@@ -814,19 +814,22 @@ h3 {
 
 main {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
 
 .container-items {
   display: grid;
-  grid-template-columns: repeat(3, 450px);
+  grid-template-columns: repeat(2, 450px);
   gap: 2rem;
-  margin: 2rem; }
+  margin: 2rem;
+  justify-content: center; }
 
 .card-item {
   min-height: 300px;
   width: 450px; }
   .card-item img {
-    width: 450px; }
+    width: 450px;
+    height: 350px; }
   .card-item h4 {
     color: white; }
   .card-item p {
@@ -888,4 +891,18 @@ main {
 
 .btnAgregar {
   border-radius: 5px;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  background-color: crimson;
+  color: white; }
+  .btnAgregar:hover {
+    color: crimson;
+    background-color: white; }
+
+.btnFinCompra {
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #5a0f1e;
+  color: white; }
+  .btnFinCompra:hover {
+    color: #5a0f1e;
+    background-color: white; }

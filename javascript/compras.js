@@ -1,8 +1,13 @@
 
+// presionar alguno de los botones "añadir a carrito"
 const addToCartButtons = document.querySelectorAll('.btnAgregar');
 addToCartButtons.forEach(addToCartButton => {
     addToCartButton.addEventListener('click',addToCartClick);
 });
+
+// al presional el botón de finalizar compra / enviar pedido
+const comprarButton = document.querySelector('.btnFinCompra');
+comprarButton.addEventListener('click', comprarButtonClicked);
 
 // variable contenedora de los items agregados al carrito 
 const shopCartContainer = document.querySelector('.carrito-container');
@@ -85,7 +90,7 @@ function actualizarTotalCarrito() {
 
     });
 
-    cartTotal.innerHTML = `$${total}`;
+    cartTotal.innerHTML = `Total: $${total}`;
 }
 
 function removerItem(event) {
@@ -104,4 +109,17 @@ function cambioCantidad(event) {
 
     actualizarTotalCarrito();
 }
+
+function limpiarNota() {
+    const notaPedido = document.querySelector('.notaPedido');
+    notaPedido.value = '';
+}
+
+function comprarButtonClicked() {
+    shopCartContainer.innerText = '';
+    alert("Tu pedido se ha enviado correctamente.");
+    actualizarTotalCarrito();
+    limpiarNota();
+
+  }
 

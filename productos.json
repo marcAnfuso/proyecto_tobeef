@@ -1,7 +1,37 @@
 [
     {
         "nombre": "Combo Churrasquito PAÍS + fritas + bebida",
-        "": 540,
-        "": "img/churra-22.jpeg"
+        "price": 540,
+        "srcPhoto": "img/churra-22.jpeg"
+    },
+    {
+        "nombre": "Combo Hamburguesa PAÍS + fritas + bebida",
+        "price": 530,
+        "srcPhoto": "img/burga2.jpeg"
+    },
+    {
+        "nombre": "Combo Hamburguesa SIMPLE + fritas + bebida",
+        "price": 450,
+        "srcPhoto": "img/burga2.jpeg"
+    },
+    {
+        "nombre": "Combo Hamburguesa DOBLE + fritas + bebida",
+        "price": 550,
+        "srcPhoto": "img/doble.jpg"
+    },
+    {
+        "nombre": "Combo Hamburguesa TRIPLE + fritas + bebida",
+        "price": 650,
+        "srcPhoto": "img/triple.jpg"
+    },
+    {
+        "nombre": "Combo Hamburguesa CUÁDRUPLE + fritas + bebida",
+        "price": 750,
+        "srcPhoto": "img/cuadru.jpg"
+    },
+    {
+        "nombre": "Combo Hamburguesa QUÍNTUPLE + fritas + bebida",
+        "price": 850,
+        "srcPhoto": "img/cuadru.jpg"
     }
 ]
